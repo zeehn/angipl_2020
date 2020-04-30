@@ -1,1 +1,10 @@
-%h1 Hello from words index
+%h1 Words
+%p 
+  You have 
+  = @words.count
+  words in database.
+%table
+  - @words.each do |word|
+    %tr
+      %td= word.value 
+      %td= word.language
