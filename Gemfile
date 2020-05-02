@@ -4,6 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.5'
 
 gem 'rails', '~> 5.2.1'
+gem 'jquery-rails'
+gem 'bootstrap', '~> 4.4.1'
 gem 'pg'
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
@@ -14,6 +16,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem "haml-rails", "~> 2.0"
 gem 'simple_form'
+
 
 group :development, :test do
   gem 'rspec-rails', '~> 4.0.0'
